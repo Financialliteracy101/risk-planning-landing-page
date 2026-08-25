@@ -298,8 +298,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #aaa;
-            text-align: center;
+            overflow: hidden;
+        }
+
+        .advisor-photo img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            display: block;
         }
 
         .advisor .eyebrow {
@@ -456,6 +462,10 @@
 
             .advisor-photo {
                 min-height: 350px;
+            }
+
+            .advisor-photo img {
+                height: 350px;
             }
 
         }
@@ -764,9 +774,10 @@
 
         <div class="advisor-photo">
 
-            <!-- Replace this with your professional photograph -->
-
-            YOUR PROFESSIONAL PHOTO
+            <img
+                src="IMG_20250821_152431.jpg"
+                alt="Tshepiso Financial Planner"
+            >
 
         </div>
 
@@ -909,7 +920,7 @@
         </p>
 
         <a
-            href="YOUR-GOOGLE-FORM-LINK-HERE"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdJMeORBTrP-3GndijiYU2qDUb9nx_QzwOtrDCYSq7pw3-gFQ/viewform?usp=header"
             class="btn"
             target="_blank"
             rel="noopener noreferrer"
