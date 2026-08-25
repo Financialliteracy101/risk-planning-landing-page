@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Protect Your Child's Future | Tshepiso Financial Planner</title>
 
-    <meta name="description" content="You have worked hard to build a secure lifestyle for your family. Make sure your child's future remains protected if something happens to you.">
+    <meta name="description" content="You've built a life for your child. Let's make sure it is protected. Personalised financial protection planning for parents and primary breadwinners.">
 
-    <!-- ============================= -->
-    <!-- META PIXEL WILL GO HERE -->
-    <!-- ============================= -->
+
+    <!-- ===================================================== -->
+    <!-- META PIXEL                                             -->
+    <!-- We will add your existing Meta Pixel here later.      -->
+    <!-- ===================================================== -->
+
 
     <style>
 
@@ -27,50 +31,48 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #f8f7f3;
-            color: #202020;
+            color: #222;
             line-height: 1.6;
         }
 
-        /* ============================= */
-        /* GENERAL */
-        /* ============================= */
-
         .container {
             width: 90%;
-            max-width: 1180px;
+            max-width: 1120px;
             margin: auto;
         }
 
         .section {
-            padding: 90px 0;
+            padding: 80px 0;
         }
 
         .eyebrow {
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
-            color: #8b6b3f;
+            color: #9a7747;
             margin-bottom: 18px;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             line-height: 1.15;
         }
 
         h1 {
-            font-size: clamp(42px, 6vw, 72px);
+            font-size: clamp(42px, 6vw, 70px);
             font-weight: 700;
         }
 
         h2 {
-            font-size: clamp(34px, 4vw, 52px);
+            font-size: clamp(34px, 4vw, 50px);
             margin-bottom: 25px;
         }
 
         h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
+            font-size: 23px;
+            margin-bottom: 12px;
         }
 
         p {
@@ -80,20 +82,18 @@
 
         .btn {
             display: inline-block;
-            background: #b28a52;
-            color: white;
-            padding: 18px 32px;
+            background: #ad844b;
+            color: #fff;
+            padding: 17px 30px;
             border-radius: 4px;
             text-decoration: none;
             font-weight: 700;
             font-size: 16px;
             transition: 0.3s ease;
-            border: none;
-            cursor: pointer;
         }
 
         .btn:hover {
-            background: #8f6c3f;
+            background: #8e6a3b;
             transform: translateY(-2px);
         }
 
@@ -102,14 +102,14 @@
         }
 
 
-        /* ============================= */
-        /* HEADER */
-        /* ============================= */
+        /* ===================================================== */
+        /* HEADER                                                */
+        /* ===================================================== */
 
         header {
             background: #111;
-            color: white;
-            padding: 22px 0;
+            color: #fff;
+            padding: 20px 0;
         }
 
         .header-inner {
@@ -119,34 +119,33 @@
         }
 
         .logo {
-            font-size: 20px;
+            font-size: 19px;
             font-weight: 700;
-            letter-spacing: 0.5px;
         }
 
-        .header-label {
-            font-size: 13px;
-            color: #d5d5d5;
+        .header-right {
+            font-size: 12px;
+            color: #ccc;
         }
 
 
-        /* ============================= */
-        /* HERO */
-        /* ============================= */
+        /* ===================================================== */
+        /* HERO                                                  */
+        /* ===================================================== */
 
         .hero {
             background:
                 linear-gradient(
-                    rgba(10,10,10,0.58),
-                    rgba(10,10,10,0.58)
+                    rgba(10,10,10,0.62),
+                    rgba(10,10,10,0.62)
                 ),
                 url("YOUR-HERO-IMAGE-URL-HERE");
 
             background-size: cover;
             background-position: center;
 
-            color: white;
-            min-height: 760px;
+            color: #fff;
+            min-height: 720px;
 
             display: flex;
             align-items: center;
@@ -157,7 +156,7 @@
         }
 
         .hero .eyebrow {
-            color: #d5ad70;
+            color: #d2aa6e;
         }
 
         .hero h1 {
@@ -165,103 +164,67 @@
         }
 
         .hero p {
-            color: #f0f0f0;
-            font-size: 21px;
+            color: #eee;
+            font-size: 20px;
             max-width: 760px;
-            margin-bottom: 35px;
+            margin-bottom: 32px;
         }
 
-        .hero-subtext {
-            margin-top: 20px;
-            font-size: 14px !important;
-            color: #ddd !important;
+        .hero-note {
+            font-size: 13px !important;
+            color: #ccc !important;
+            margin-top: 18px;
+            margin-bottom: 0 !important;
         }
 
 
-        /* ============================= */
-        /* INTRO */
-        /* ============================= */
+        /* ===================================================== */
+        /* PERSONAL MESSAGE                                      */
+        /* ===================================================== */
 
-        .intro {
-            background: white;
+        .personal {
+            background: #fff;
         }
 
-        .intro-grid {
+        .personal-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.15fr 0.85fr;
             gap: 70px;
             align-items: center;
         }
 
-        .intro-text p {
+        .personal-text p {
             margin-bottom: 20px;
         }
 
-        .highlight-box {
+        .personal-quote {
             background: #f1eee7;
-            padding: 45px;
-            border-left: 5px solid #b28a52;
+            padding: 40px;
+            border-left: 5px solid #ad844b;
         }
 
-        .highlight-box p {
-            font-size: 23px;
-            color: #292929;
+        .personal-quote p {
+            color: #252525;
+            font-size: 24px;
             font-weight: 600;
         }
 
 
-        /* ============================= */
-        /* VIDEO */
-        /* ============================= */
+        /* ===================================================== */
+        /* THE REAL QUESTION                                     */
+        /* ===================================================== */
 
-        .video-section {
-            background: #151515;
-            color: white;
-        }
-
-        .video-section p {
-            color: #d5d5d5;
-        }
-
-        .video-wrapper {
-            max-width: 900px;
-            margin: 40px auto 0;
-            aspect-ratio: 16 / 9;
-            background: #282828;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #444;
-        }
-
-        .video-placeholder {
-            text-align: center;
-            color: #aaa;
-        }
-
-        .video-placeholder strong {
-            display: block;
-            font-size: 20px;
-            margin-bottom: 8px;
-            color: white;
-        }
-
-
-        /* ============================= */
-        /* PROBLEM */
-        /* ============================= */
-
-        .problem {
+        .question {
             background: #f8f7f3;
         }
 
-        .problem-content {
+        .question-inner {
             max-width: 850px;
             margin: auto;
         }
 
-        .problem-content p {
-            margin-bottom: 22px;
+        .question-inner p {
+            margin-bottom: 20px;
         }
 
         .big-question {
@@ -269,43 +232,43 @@
             font-weight: 700;
             color: #222;
             margin: 35px 0;
+            line-height: 1.2;
         }
 
 
-        /* ============================= */
-        /* PROTECTION STRATEGY */
-        /* ============================= */
+        /* ===================================================== */
+        /* PROTECTION STRATEGY                                   */
+        /* ===================================================== */
 
         .strategy {
-            background: white;
+            background: #fff;
         }
 
         .strategy-intro {
-            max-width: 800px;
-            margin: 0 auto 55px;
+            max-width: 780px;
+            margin: 0 auto 45px;
             text-align: center;
         }
 
         .strategy-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
+            gap: 22px;
         }
 
         .strategy-card {
-            padding: 40px 30px;
-            background: #f5f3ed;
-            border-top: 4px solid #b28a52;
+            background: #f5f2eb;
+            padding: 35px 28px;
+            border-top: 4px solid #ad844b;
         }
 
-        .strategy-card span {
-            display: block;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: #8b6b3f;
-            margin-bottom: 15px;
+        .strategy-number {
+            font-size: 12px;
             font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #9a7747;
+            text-transform: uppercase;
+            margin-bottom: 14px;
         }
 
         .strategy-card p {
@@ -313,252 +276,201 @@
         }
 
 
-        /* ============================= */
-        /* LIFESTYLE */
-        /* ============================= */
-
-        .lifestyle {
-            background: #171717;
-            color: white;
-        }
-
-        .lifestyle-content {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .lifestyle p {
-            color: #d5d5d5;
-            margin-bottom: 20px;
-        }
-
-        .lifestyle h2 {
-            color: white;
-        }
-
-        .lifestyle-highlight {
-            font-size: 28px;
-            color: white !important;
-            font-weight: 600;
-            margin: 35px 0;
-        }
-
-
-        /* ============================= */
-        /* ADVISER POSITIONING */
-        /* ============================= */
+        /* ===================================================== */
+        /* ADVISER                                               */
+        /* ===================================================== */
 
         .advisor {
-            background: white;
+            background: #171717;
+            color: #fff;
         }
 
         .advisor-grid {
             display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
-            gap: 70px;
+            grid-template-columns: 0.75fr 1.25fr;
+            gap: 65px;
             align-items: center;
         }
 
         .advisor-photo {
-            background: #ddd;
-            min-height: 500px;
+            min-height: 480px;
+            background: #303030;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #777;
+            color: #aaa;
+            text-align: center;
         }
 
-        .advisor-text p {
+        .advisor .eyebrow {
+            color: #d2aa6e;
+        }
+
+        .advisor h2 {
+            color: #fff;
+        }
+
+        .advisor p {
+            color: #d3d3d3;
             margin-bottom: 20px;
         }
 
         .advisor-list {
-            margin: 25px 0;
             list-style: none;
+            margin: 28px 0;
         }
 
         .advisor-list li {
-            margin-bottom: 15px;
+            color: #eee;
+            margin-bottom: 14px;
             padding-left: 25px;
             position: relative;
-            font-size: 17px;
         }
 
         .advisor-list li::before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #b28a52;
+            color: #c39a5e;
             font-weight: bold;
         }
 
 
-        /* ============================= */
-        /* WHO THIS IS FOR */
-        /* ============================= */
+        /* ===================================================== */
+        /* WHO THIS IS FOR                                       */
+        /* ===================================================== */
 
-        .qualification {
+        .who {
             background: #f1eee7;
         }
 
-        .qualification-intro {
-            max-width: 850px;
+        .who-inner {
+            max-width: 900px;
             margin: auto;
             text-align: center;
         }
 
-        .qualification-intro p {
-            margin-bottom: 20px;
+        .who-inner p {
+            margin-bottom: 25px;
         }
 
-        .qualification-list {
-            max-width: 800px;
-            margin: 40px auto;
+        .who-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 14px;
+            margin: 35px 0;
+            text-align: left;
         }
 
-        .qualification-item {
-            background: white;
-            padding: 22px;
+        .who-item {
+            background: #fff;
+            padding: 20px;
+            font-size: 16px;
             font-weight: 600;
         }
 
 
-        /* ============================= */
-        /* FORM */
-        /* ============================= */
+        /* ===================================================== */
+        /* CTA                                                   */
+        /* ===================================================== */
 
-        .form-section {
-            background: white;
+        .cta {
+            background: #fff;
+            text-align: center;
         }
 
-        .form-intro {
-            max-width: 750px;
+        .cta-inner {
+            max-width: 780px;
             margin: auto;
-            text-align: center;
         }
 
-        .form-intro p {
-            margin-bottom: 15px;
+        .cta p {
+            margin-bottom: 28px;
         }
 
-        form {
-            max-width: 760px;
-            margin: 50px auto 0;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        label {
-            display: block;
-            font-weight: 700;
-            margin-bottom: 9px;
-        }
-
-        input,
-        select {
-            width: 100%;
-            padding: 16px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            font-size: 16px;
-            background: white;
-        }
-
-        .form-note {
-            font-size: 13px;
-            color: #777;
-            margin-top: 15px;
+        .cta-small {
+            font-size: 13px !important;
+            color: #777 !important;
+            margin-top: 18px;
         }
 
 
-        /* ============================= */
-        /* FINAL CTA */
-        /* ============================= */
-
-        .final-cta {
-            background: #171717;
-            color: white;
-            text-align: center;
-        }
-
-        .final-cta h2 {
-            color: white;
-        }
-
-        .final-cta p {
-            color: #d5d5d5;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-
-
-        /* ============================= */
-        /* FOOTER */
-        /* ============================= */
+        /* ===================================================== */
+        /* FOOTER / DISCLOSURE                                   */
+        /* ===================================================== */
 
         footer {
             background: #0c0c0c;
             color: #aaa;
+            padding: 35px 20px;
             text-align: center;
-            padding: 30px 15px;
-            font-size: 13px;
+        }
+
+        footer p {
+            color: #aaa;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .fsp {
+            color: #ddd !important;
+            font-weight: 600;
         }
 
 
-        /* ============================= */
-        /* MOBILE */
-        /* ============================= */
+        /* ===================================================== */
+        /* MOBILE                                                */
+        /* ===================================================== */
 
         @media (max-width: 800px) {
 
             .section {
-                padding: 65px 0;
+                padding: 60px 0;
             }
 
             .hero {
-                min-height: 700px;
+                min-height: 680px;
             }
 
-            .intro-grid,
+            .personal-grid,
             .advisor-grid,
             .strategy-grid {
                 grid-template-columns: 1fr;
             }
 
-            .qualification-list {
+            .who-list {
                 grid-template-columns: 1fr;
             }
 
-            .highlight-box {
+            .personal-quote {
                 padding: 30px;
             }
 
-            .hero p {
-                font-size: 18px;
+            .personal-quote p {
+                font-size: 21px;
             }
 
-            .header-label {
+            .header-right {
                 display: none;
+            }
+
+            .advisor-photo {
+                min-height: 350px;
             }
 
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-<!-- ============================= -->
-<!-- HEADER -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- HEADER                                                    -->
+<!-- ========================================================= -->
 
 <header>
 
@@ -568,8 +480,8 @@
             Tshepiso Financial Planner
         </div>
 
-        <div class="header-label">
-            Strategic Financial Planning & Wealth Protection
+        <div class="header-right">
+            Personalised Financial Planning
         </div>
 
     </div>
@@ -578,9 +490,9 @@
 
 
 
-<!-- ============================= -->
-<!-- HERO -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- HERO                                                      -->
+<!-- ========================================================= -->
 
 <section class="hero">
 
@@ -593,22 +505,21 @@
             </div>
 
             <h1>
-                If something happened to you tomorrow, would your child's future still be protected?
+                You've built a life for your child. Let's make sure it is protected.
             </h1>
 
             <p>
-                You've worked hard to create a secure lifestyle for your family.
-                From their education and home to the opportunities you want them
-                to have in life — you've built something worth protecting.
+                If your child still depends on you, their financial future is
+                closely connected to your ability to provide for them.
             </p>
 
             <a href="#assessment" class="btn">
                 Start My Protection Assessment
             </a>
 
-            <p class="hero-subtext">
-                A personalised financial protection strategy for parents and
-                primary breadwinners.
+            <p class="hero-note">
+                A personalised financial protection conversation for parents,
+                primary breadwinners and single parents.
             </p>
 
         </div>
@@ -619,54 +530,51 @@
 
 
 
-<!-- ============================= -->
-<!-- INTRO -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- PERSONAL MESSAGE                                          -->
+<!-- ========================================================= -->
 
-<section class="section intro">
+<section class="section personal">
 
-    <div class="container intro-grid">
+    <div class="container personal-grid">
 
-        <div class="intro-text">
+
+        <div class="personal-text">
 
             <div class="eyebrow">
-                You Are The Financial Foundation
+                Your Child. Your Responsibility. Their Future.
             </div>
 
             <h2>
-                Your child doesn't just depend on your love.
-                They depend on the life you've built.
+                Protecting your child isn't only about providing for them today.
             </h2>
 
             <p>
-                If you are the primary breadwinner, your income is doing far
-                more than paying today's bills.
+                It's about making sure the life you've worked so hard to create
+                for them can continue, even when life doesn't go according to plan.
             </p>
 
             <p>
-                It is funding school fees, your home, healthcare, activities,
-                family experiences, savings, investments and the opportunities
-                you want your child to have.
+                As your financial planner, I work alongside you to put
+                appropriate protection in place for your child — considering
+                your income, your family's lifestyle, your assets and the
+                responsibilities that would need to be taken care of if you
+                were no longer able to provide.
             </p>
 
             <p>
-                The question isn't simply whether you have life cover.
-            </p>
-
-            <p>
-                The real question is whether your entire financial protection
-                strategy is designed around what your child would actually need
-                if you could no longer provide for them.
+                Because your child's security deserves a plan, not a hope.
             </p>
 
         </div>
 
 
-        <div class="highlight-box">
+        <div class="personal-quote">
 
             <p>
-                “The lifestyle you've worked so hard to give your child
-                shouldn't depend entirely on you being there tomorrow.”
+                “If you're the parent paying the school fees, the bond,
+                the medical aid, the holidays and everything in between —
+                your income is doing more than paying today's bills.”
             </p>
 
         </div>
@@ -677,108 +585,54 @@
 
 
 
-<!-- ============================= -->
-<!-- VIDEO -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- THE REAL QUESTION                                         -->
+<!-- ========================================================= -->
 
-<section class="section video-section">
+<section class="section question">
 
-    <div class="container">
-
-        <div class="center">
-
-            <div class="eyebrow">
-                Watch Before You Decide
-            </div>
-
-            <h2>
-                Are You A “Private School Mommy”?
-            </h2>
-
-            <p>
-                If you've worked hard to give your children a secure,
-                comfortable life, this is a conversation you shouldn't ignore.
-            </p>
-
-        </div>
-
-
-        <div class="video-wrapper">
-
-            <!-- REPLACE THIS WITH YOUR VIDEO EMBED -->
-
-            <div class="video-placeholder">
-
-                <strong>
-                    YOUR VIDEO WILL GO HERE
-                </strong>
-
-                Paste your video embed code here.
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ============================= -->
-<!-- THE PROBLEM -->
-<!-- ============================= -->
-
-<section class="section problem">
-
-    <div class="container problem-content">
+    <div class="container question-inner">
 
         <div class="eyebrow">
-            The Financial Protection Gap
+            The Question Worth Asking
         </div>
 
         <h2>
-            Having policies isn't the same as having a protection strategy.
+            Having financial cover isn't the same as having a protection plan.
         </h2>
 
         <p>
-            Many successful professionals have accumulated life cover,
-            retirement funds, investments and other financial products over
-            the years.
+            You may already have life cover through your employer or a personal
+            policy. You may have investments, property and other assets.
         </p>
 
         <p>
-            But these pieces are often purchased at different times,
-            from different providers and without considering how they work
-            together.
+            But have you considered how all of these would work together if
+            something happened to you?
         </p>
 
         <div class="big-question">
-
-            If you weren't here to provide for your child,
-            would everything you've built still work?
-
+            If you were no longer able to provide,
+            would your child still have the financial stability
+            you've worked so hard to create?
         </div>
 
         <p>
-            Would there be enough capital to replace your income?
+            Would their education remain affordable?
         </p>
 
         <p>
-            Would your child's education and lifestyle remain affordable?
+            Could your family maintain its current lifestyle?
         </p>
 
         <p>
-            Would your assets be transferred efficiently?
+            Would your income be replaced if illness or disability prevented
+            you from working?
         </p>
 
         <p>
-            Would the people you trust actually know what to do?
-        </p>
-
-        <p>
-            And perhaps most importantly — would your child have the financial
-            stability you intended for them?
+            And have you considered how your assets and wishes should be
+            provided for when minor children are involved?
         </p>
 
     </div>
@@ -787,9 +641,9 @@
 
 
 
-<!-- ============================= -->
-<!-- PROTECTION STRATEGY -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- PROTECTION STRATEGY                                       -->
+<!-- ========================================================= -->
 
 <section class="section strategy">
 
@@ -802,13 +656,13 @@
             </div>
 
             <h2>
-                Protect more than just your life.
+                Protect their lifestyle. Protect their future.
+                Protect what you've built.
             </h2>
 
             <p>
-                Your protection strategy should consider the income that
-                supports your family, the capital your child may need and
-                how your assets should be managed and transferred.
+                Your financial protection should be built around your family's
+                circumstances — not around buying individual policies.
             </p>
 
         </div>
@@ -819,19 +673,19 @@
 
             <div class="strategy-card">
 
-                <span>
-                    01 — Income Protection
-                </span>
+                <div class="strategy-number">
+                    01 — Protect Their Lifestyle
+                </div>
 
                 <h3>
                     Protect the income your family depends on.
                 </h3>
 
                 <p>
-                    Your income is one of your family's most valuable assets.
-                    We consider how your household would cope if illness,
-                    disability or another unexpected event prevented you
-                    from earning.
+                    If illness or disability prevents you from earning,
+                    your family's financial needs don't stop. We consider
+                    how your income could be protected so your child isn't
+                    forced to experience unnecessary financial disruption.
                 </p>
 
             </div>
@@ -840,18 +694,19 @@
 
             <div class="strategy-card">
 
-                <span>
-                    02 — Life Cover
-                </span>
+                <div class="strategy-number">
+                    02 — Protect Their Future
+                </div>
 
                 <h3>
-                    Create financial security for the people you leave behind.
+                    Make provision for the future you've planned for them.
                 </h3>
 
                 <p>
-                    Life cover should be considered in the context of your
-                    family's actual financial needs — not simply as an
-                    arbitrary amount of cover.
+                    If you are no longer there to provide, appropriate life
+                    cover can help provide capital for the financial
+                    commitments and future needs you've been working towards
+                    for your child.
                 </p>
 
             </div>
@@ -860,18 +715,19 @@
 
             <div class="strategy-card">
 
-                <span>
-                    03 — Estate Planning
-                </span>
+                <div class="strategy-number">
+                    03 — Protect What You've Built
+                </div>
 
                 <h3>
-                    Make sure what you've built reaches the people you intended.
+                    Make sure your wishes and assets are properly considered.
                 </h3>
 
                 <p>
-                    Your protection strategy should also consider how your
-                    assets are structured, managed and transferred to your
-                    beneficiaries.
+                    Estate planning forms an important part of the bigger
+                    picture — particularly when minor children are involved.
+                    Your assets and wishes need to be considered as part of
+                    your overall protection strategy.
                 </p>
 
             </div>
@@ -885,47 +741,9 @@
 
 
 
-<!-- ============================= -->
-<!-- LIFESTYLE -->
-<!-- ============================= -->
-
-<section class="section lifestyle">
-
-    <div class="container lifestyle-content">
-
-        <div class="eyebrow">
-            This Isn't About Buying Another Policy
-        </div>
-
-        <h2>
-            It's about protecting the life you've worked so hard to create.
-        </h2>
-
-        <p class="lifestyle-highlight">
-            The school. The home. The opportunities.
-            The lifestyle. The future.
-        </p>
-
-        <p>
-            If you are earning well and have built significant assets,
-            your financial protection strategy needs to be considered
-            within the context of your entire financial life.
-        </p>
-
-        <p>
-            This is why I don't believe in simply selling you a policy
-            and sending you on your way.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- ============================= -->
-<!-- ADVISER POSITIONING -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- ADVISER POSITIONING                                       -->
+<!-- ========================================================= -->
 
 <section class="section advisor">
 
@@ -934,13 +752,14 @@
 
         <div class="advisor-photo">
 
+            <!-- Replace this area with your professional photograph -->
+
             YOUR PROFESSIONAL PHOTO
 
         </div>
 
 
-
-        <div class="advisor-text">
+        <div>
 
             <div class="eyebrow">
                 Your Financial Planner
@@ -948,41 +767,40 @@
 
             <h2>
                 You don't need another salesperson.
-                You need someone who understands the bigger picture.
+                You need someone who understands what you're protecting.
             </h2>
 
             <p>
-                My role is not simply to help you purchase financial
-                products.
+                My role is not simply to help you purchase financial products.
             </p>
 
             <p>
-                My role is to understand your family, your income,
-                your assets, your obligations and the lifestyle you have
-                worked hard to create — and then help you build a protection
-                strategy around it.
+                My role is to understand your family, your income, your
+                children, your assets and the lifestyle you've worked hard
+                to create — and then help you put an appropriate protection
+                strategy in place.
             </p>
 
             <ul class="advisor-list">
 
                 <li>
-                    Personalised financial planning rather than one-size-fits-all solutions
+                    Personalised advice based on your circumstances
                 </li>
 
                 <li>
-                    A strategy designed around your family's actual needs
+                    A broader view of your family's financial protection
                 </li>
 
                 <li>
-                    Integration of income protection, life cover and estate planning
+                    Consideration of income protection, life cover and estate planning
                 </li>
 
                 <li>
-                    Ongoing reviews as your income, assets and family circumstances change
+                    Ongoing reviews as your life, income and assets change
                 </li>
 
                 <li>
-                    A long-term adviser relationship rather than a once-off transaction
+                    A long-term financial planning relationship — not a once-off transaction
                 </li>
 
             </ul>
@@ -1000,52 +818,53 @@
 
 
 
-<!-- ============================= -->
-<!-- WHO THIS IS FOR -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- WHO THIS IS FOR                                           -->
+<!-- ========================================================= -->
 
-<section class="section qualification">
+<section class="section who">
 
-    <div class="container qualification-intro">
+    <div class="container who-inner">
 
         <div class="eyebrow">
-            This Is A Strategic Planning Conversation
+            Is This The Right Conversation For You?
         </div>
 
         <h2>
-            This service is designed for parents who have something significant to protect.
+            This is for parents who have something meaningful to protect.
         </h2>
 
         <p>
-            This may be particularly relevant if you are a professional,
-            business owner, senior executive or primary breadwinner with
-            children who depend on your income and assets.
+            Particularly if you are a professional, business owner, senior
+            executive or primary breadwinner with children who still depend
+            on you financially.
         </p>
 
-        <div class="qualification-list">
 
-            <div class="qualification-item">
-                You are a parent with financially dependent children
+        <div class="who-list">
+
+            <div class="who-item">
+                You have one or more financially dependent children.
             </div>
 
-            <div class="qualification-item">
-                You are a primary breadwinner or significant income provider
+            <div class="who-item">
+                You are the primary breadwinner or a significant income provider.
             </div>
 
-            <div class="qualification-item">
-                You have built a comfortable or affluent lifestyle
+            <div class="who-item">
+                Your family depends on your income to maintain its current lifestyle.
             </div>
 
-            <div class="qualification-item">
-                Your children's education and future are major priorities
+            <div class="who-item">
+                Your child's education, wellbeing and future are major priorities.
             </div>
 
-            <div class="qualification-item">
-                You have meaningful income, savings, investments or assets
+            <div class="who-item">
+                You have built meaningful assets, investments or wealth.
             </div>
 
-            <div class="qualification-item">
-                You want an ongoing financial planning relationship
+            <div class="who-item">
+                You want an adviser who will continue to review and guide your strategy over time.
             </div>
 
         </div>
@@ -1056,507 +875,73 @@
 
 
 
-<!-- ============================= -->
-<!-- ASSESSMENT -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- FINAL CTA / GOOGLE FORM                                   -->
+<!-- ========================================================= -->
 
-<section class="section form-section" id="assessment">
+<section class="section cta" id="assessment">
 
-    <div class="container">
-
-        <div class="form-intro">
-
-            <div class="eyebrow">
-                Protection Strategy Assessment
-            </div>
-
-            <h2>
-                Let's determine whether your family has the protection it needs.
-            </h2>
-
-            <p>
-                Complete the short assessment below.
-            </p>
-
-            <p>
-                Your answers help me understand whether a comprehensive
-                protection-planning conversation would be appropriate for you.
-            </p>
-
-        </div>
-
-
-        <!-- ====================================== -->
-        <!-- FORM START -->
-        <!-- ====================================== -->
-
-        <!--
-            WE WILL CONNECT THIS TO YOUR GOOGLE FORM
-            OR YOUR CHOSEN LEAD CAPTURE SYSTEM.
-        -->
-
-        <form action="YOUR-GOOGLE-FORM-OR-FORM-ENDPOINT" method="POST">
-
-
-            <!-- NAME -->
-
-            <div class="form-group">
-
-                <label for="name">
-                    Your full name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Full name"
-                    required
-                >
-
-            </div>
-
-
-
-            <!-- EMAIL -->
-
-            <div class="form-group">
-
-                <label for="email">
-                    Email address
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email address"
-                    required
-                >
-
-            </div>
-
-
-
-            <!-- PHONE -->
-
-            <div class="form-group">
-
-                <label for="phone">
-                    Mobile number
-                </label>
-
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="e.g. 082 123 4567"
-                    required
-                >
-
-            </div>
-
-
-
-            <!-- CHILDREN -->
-
-            <div class="form-group">
-
-                <label for="children">
-                    How many financially dependent children do you have?
-                </label>
-
-                <select id="children" name="children" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        1
-                    </option>
-
-                    <option>
-                        2
-                    </option>
-
-                    <option>
-                        3
-                    </option>
-
-                    <option>
-                        4+
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- BREADWINNER -->
-
-            <div class="form-group">
-
-                <label for="breadwinner">
-                    Which best describes your role in your household's finances?
-                </label>
-
-                <select id="breadwinner" name="breadwinner" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        I am the primary breadwinner
-                    </option>
-
-                    <option>
-                        I provide a significant portion of the household income
-                    </option>
-
-                    <option>
-                        My partner and I contribute roughly equally
-                    </option>
-
-                    <option>
-                        Other
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- INCOME -->
-
-            <div class="form-group">
-
-                <label for="income">
-                    What is your approximate monthly household income?
-                </label>
-
-                <select id="income" name="income" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        Below R40,000
-                    </option>
-
-                    <option>
-                        R40,000 – R60,000
-                    </option>
-
-                    <option>
-                        R60,000 – R100,000
-                    </option>
-
-                    <option>
-                        R100,000 – R150,000
-                    </option>
-
-                    <option>
-                        R150,000+
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- EXPENSES -->
-
-            <div class="form-group">
-
-                <label for="expenses">
-                    Approximately how much does your household spend each month to maintain its current lifestyle?
-                </label>
-
-                <select id="expenses" name="expenses" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        Below R30,000
-                    </option>
-
-                    <option>
-                        R30,000 – R50,000
-                    </option>
-
-                    <option>
-                        R50,000 – R75,000
-                    </option>
-
-                    <option>
-                        R75,000 – R100,000
-                    </option>
-
-                    <option>
-                        R100,000+
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- ASSETS -->
-
-            <div class="form-group">
-
-                <label for="assets">
-                    Approximately how much do you currently have in investments, property and other significant assets?
-                </label>
-
-                <select id="assets" name="assets" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        Below R1 million
-                    </option>
-
-                    <option>
-                        R1 million – R2 million
-                    </option>
-
-                    <option>
-                        R2 million – R5 million
-                    </option>
-
-                    <option>
-                        R5 million – R10 million
-                    </option>
-
-                    <option>
-                        R10 million+
-                    </option>
-
-                    <option>
-                        I'm not sure
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- EXISTING COVER -->
-
-            <div class="form-group">
-
-                <label for="cover">
-                    How would you describe your current life and income protection?
-                </label>
-
-                <select id="cover" name="cover" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        I have comprehensive cover and review it regularly
-                    </option>
-
-                    <option>
-                        I have some cover but I'm not sure if it is enough
-                    </option>
-
-                    <option>
-                        I have cover but it has not been reviewed in years
-                    </option>
-
-                    <option>
-                        I only have employer-provided cover
-                    </option>
-
-                    <option>
-                        I currently have little or no cover
-                    </option>
-
-                    <option>
-                        I'm not sure
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- ESTATE -->
-
-            <div class="form-group">
-
-                <label for="estate">
-                    When was the last time your estate plan and beneficiaries were reviewed?
-                </label>
-
-                <select id="estate" name="estate" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        Within the last 12 months
-                    </option>
-
-                    <option>
-                        1–3 years ago
-                    </option>
-
-                    <option>
-                        More than 3 years ago
-                    </option>
-
-                    <option>
-                        I have never reviewed this properly
-                    </option>
-
-                    <option>
-                        I'm not sure
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- MOTIVATION -->
-
-            <div class="form-group">
-
-                <label for="motivation">
-                    What is the biggest reason you are considering reviewing your protection strategy now?
-                </label>
-
-                <select id="motivation" name="motivation" required>
-
-                    <option value="">
-                        Please select
-                    </option>
-
-                    <option>
-                        I want to make sure my children are financially protected
-                    </option>
-
-                    <option>
-                        I am the primary breadwinner and want to protect my income
-                    </option>
-
-                    <option>
-                        My financial situation has changed
-                    </option>
-
-                    <option>
-                        I have accumulated significant assets
-                    </option>
-
-                    <option>
-                        I recently had a child
-                    </option>
-
-                    <option>
-                        I realised my existing cover may not be enough
-                    </option>
-
-                    <option>
-                        I want a complete financial protection review
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- CTA -->
-
-            <button type="submit" class="btn">
-
-                Request My Protection Assessment
-
-            </button>
-
-
-            <p class="form-note">
-
-                Your information will be treated confidentially and used to
-                determine whether a financial planning consultation is
-                appropriate for your circumstances.
-
-            </p>
-
-        </form>
-
-    </div>
-
-</section>
-
-
-
-<!-- ============================= -->
-<!-- FINAL CTA -->
-<!-- ============================= -->
-
-<section class="section final-cta">
-
-    <div class="container">
+    <div class="container cta-inner">
 
         <div class="eyebrow">
-            Protect What Matters Most
+            Take The First Step
         </div>
 
         <h2>
-            You've spent years building this life.
-            Make sure your family can keep it.
+            Let's make sure your child is properly considered in your financial plan.
         </h2>
 
         <p>
-            The goal isn't simply to have more policies.
-            It's to have confidence that your financial protection strategy
-            is aligned with the people, lifestyle and future you care about most.
+            Complete the short protection assessment so I can understand
+            your circumstances before we have a conversation.
         </p>
 
-        <a href="#assessment" class="btn">
+        <!-- ================================================= -->
+        <!-- REPLACE THE # BELOW WITH YOUR GOOGLE FORM LINK    -->
+        <!-- ================================================= -->
+
+        <a
+            href="YOUR-GOOGLE-FORM-LINK-HERE"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             Start My Protection Assessment
         </a>
 
+        <p class="cta-small">
+            Your responses will help determine whether a personalised
+            financial protection discussion is appropriate for your circumstances.
+        </p>
+
     </div>
 
 </section>
 
 
 
-<!-- ============================= -->
-<!-- FOOTER -->
-<!-- ============================= -->
+<!-- ========================================================= -->
+<!-- FOOTER / REGULATORY DISCLOSURE                            -->
+<!-- ========================================================= -->
 
 <footer>
 
     <p>
-        Tshepiso Financial Planner
+        <strong>Tshepiso Financial Planner</strong>
+    </p>
+
+    <p class="fsp">
+        A representative of Liberty Group Limited,
+        an Authorised Financial Services Provider (FSP 2409).
     </p>
 
     <p>
         Financial planning and advisory services.
-        Terms, disclosures and regulatory information will be added here.
+        Terms, conditions, risks and limitations apply.
+    </p>
+
+    <p>
+        © 2026 Tshepiso Financial Planner. All rights reserved.
     </p>
 
 </footer>
