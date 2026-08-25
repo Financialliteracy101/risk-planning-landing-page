@@ -90,6 +90,7 @@
             font-weight: 700;
             font-size: 16px;
             transition: 0.3s ease;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -377,6 +378,40 @@
 
 
         /* ===================================================== */
+        /* ASSESSMENT                                            */
+        /* ===================================================== */
+
+        .assessment {
+            background: #f8f7f3;
+        }
+
+        .assessment-inner {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .assessment-inner p {
+            margin-bottom: 28px;
+        }
+
+        .form-wrapper {
+            background: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+            margin-top: 35px;
+            overflow: hidden;
+        }
+
+        .form-wrapper iframe {
+            width: 100%;
+            min-height: 1200px;
+            border: none;
+        }
+
+
+        /* ===================================================== */
         /* FINAL CTA                                             */
         /* ===================================================== */
 
@@ -466,6 +501,14 @@
 
             .advisor-photo img {
                 height: 350px;
+            }
+
+            .form-wrapper {
+                padding: 5px;
+            }
+
+            .form-wrapper iframe {
+                min-height: 1400px;
             }
 
         }
@@ -899,12 +942,12 @@
 
 
 <!-- ========================================================= -->
-<!-- FINAL CTA                                                 -->
+<!-- ASSESSMENT                                                -->
 <!-- ========================================================= -->
 
-<section class="section cta" id="assessment">
+<section class="section assessment" id="assessment">
 
-    <div class="container cta-inner">
+    <div class="container assessment-inner">
 
         <div class="eyebrow">
             Take The First Step
@@ -919,14 +962,19 @@
             your circumstances before we have a conversation.
         </p>
 
-        <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdJMeORBTrP-3GndijiYU2qDUb9nx_QzwOtrDCYSq7pw3-gFQ/viewform?usp=header"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Start My Protection Assessment
-        </a>
+        <div class="form-wrapper">
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdJMeORBTrP-3GndijiYU2qDUb9nx_QzwOtrDCYSq7pw3-gFQ/viewform?embedded=true"
+                width="100%"
+                height="1200"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">
+                Loading…
+            </iframe>
+
+        </div>
 
         <p class="cta-small">
             Your responses will help determine whether a personalised
