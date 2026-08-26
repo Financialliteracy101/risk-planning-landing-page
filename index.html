@@ -113,6 +113,7 @@
             font-size: 16px;
             transition: 0.3s ease;
             cursor: pointer;
+            border: none;
         }
 
         .btn:hover {
@@ -417,44 +418,70 @@
             margin-bottom: 28px;
         }
 
-        .form-wrapper {
+        .lead-form {
             background: #fff;
-            padding: 20px;
+            padding: 40px;
             border-radius: 6px;
             box-shadow: 0 10px 35px rgba(0,0,0,0.08);
             margin-top: 35px;
-            overflow: hidden;
+            text-align: left;
         }
 
-        .form-wrapper iframe {
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label.question-label {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 14px;
+        }
+
+        .form-input {
             width: 100%;
-            min-height: 1200px;
-            border: none;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
+        .option {
+            display: block;
+            background: #f8f7f3;
+            border: 1px solid #ddd;
+            padding: 14px 16px;
+            margin-bottom: 9px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-        /* ===================================================== */
-        /* FINAL CTA                                             */
-        /* ===================================================== */
+        .option:hover {
+            border-color: #ad844b;
+        }
 
-        .cta {
-            background: #fff;
+        .option input {
+            margin-right: 10px;
+        }
+
+        .required {
+            color: #9a7747;
+        }
+
+        .form-submit {
             text-align: center;
+            margin-top: 35px;
         }
 
-        .cta-inner {
-            max-width: 780px;
-            margin: auto;
-        }
-
-        .cta p {
-            margin-bottom: 28px;
-        }
-
-        .cta-small {
+        .form-note {
             font-size: 13px !important;
             color: #777 !important;
+            text-align: center;
             margin-top: 18px;
+            margin-bottom: 0 !important;
         }
 
 
@@ -525,12 +552,8 @@
                 height: 350px;
             }
 
-            .form-wrapper {
-                padding: 5px;
-            }
-
-            .form-wrapper iframe {
-                min-height: 1400px;
+            .lead-form {
+                padding: 25px 18px;
             }
 
         }
@@ -542,10 +565,6 @@
 
 <body>
 
-
-<!-- ========================================================= -->
-<!-- HEADER                                                    -->
-<!-- ========================================================= -->
 
 <header>
 
@@ -564,10 +583,6 @@
 </header>
 
 
-
-<!-- ========================================================= -->
-<!-- HERO                                                      -->
-<!-- ========================================================= -->
 
 <section class="hero">
 
@@ -605,14 +620,9 @@
 
 
 
-<!-- ========================================================= -->
-<!-- PERSONAL MESSAGE                                          -->
-<!-- ========================================================= -->
-
 <section class="section personal">
 
     <div class="container personal-grid">
-
 
         <div class="personal-text">
 
@@ -659,10 +669,6 @@
 </section>
 
 
-
-<!-- ========================================================= -->
-<!-- THE REAL QUESTION                                         -->
-<!-- ========================================================= -->
 
 <section class="section question">
 
@@ -716,10 +722,6 @@
 
 
 
-<!-- ========================================================= -->
-<!-- PROTECTION STRATEGY                                       -->
-<!-- ========================================================= -->
-
 <section class="section strategy">
 
     <div class="container">
@@ -745,7 +747,6 @@
 
         <div class="strategy-grid">
 
-
             <div class="strategy-card">
 
                 <div class="strategy-number">
@@ -764,7 +765,6 @@
                 </p>
 
             </div>
-
 
 
             <div class="strategy-card">
@@ -787,7 +787,6 @@
             </div>
 
 
-
             <div class="strategy-card">
 
                 <div class="strategy-number">
@@ -807,7 +806,6 @@
 
             </div>
 
-
         </div>
 
     </div>
@@ -816,14 +814,9 @@
 
 
 
-<!-- ========================================================= -->
-<!-- ADVISER POSITIONING                                       -->
-<!-- ========================================================= -->
-
 <section class="section advisor">
 
     <div class="container advisor-grid">
-
 
         <div class="advisor-photo">
 
@@ -894,10 +887,6 @@
 
 
 
-<!-- ========================================================= -->
-<!-- WHO THIS IS FOR                                           -->
-<!-- ========================================================= -->
-
 <section class="section who">
 
     <div class="container who-inner">
@@ -951,10 +940,6 @@
 
 
 
-<!-- ========================================================= -->
-<!-- ASSESSMENT                                                -->
-<!-- ========================================================= -->
-
 <section class="section assessment" id="assessment">
 
     <div class="container assessment-inner">
@@ -972,34 +957,356 @@
             your circumstances before we have a conversation.
         </p>
 
-        <div class="form-wrapper">
 
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdJMeORBTrP-3GndijiYU2qDUb9nx_QzwOtrDCYSq7pw3-gFQ/viewform?embedded=true"
-                width="100%"
-                height="1200"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0">
-                Loading…
-            </iframe>
+        <form
+            class="lead-form"
+            action="https://script.google.com/macros/s/AKfycbzyGUacEWBPatqoLS2awhknY0ERpQ0zcmcnZ3z5HRcwt6cbnKILGf61Ri4n8esxvB_LOQ/exec"
+            method="POST"
+            target="_top"
+        >
 
-        </div>
 
-        <p class="cta-small">
-            Your responses will help determine whether a personalised
-            financial protection discussion is appropriate for your circumstances.
-        </p>
+            <!-- QUESTION 1 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    Full Name <span class="required">*</span>
+                </label>
+
+                <input
+                    class="form-input"
+                    type="text"
+                    name="fullName"
+                    required
+                    placeholder="Your full name"
+                >
+
+            </div>
+
+
+            <!-- QUESTION 2 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    Phone Number <span class="required">*</span>
+                </label>
+
+                <input
+                    class="form-input"
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="Your phone number"
+                >
+
+            </div>
+
+
+            <!-- QUESTION 3 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    How many financially dependent children do you have?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="children" value="1" required>
+                    1
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="children" value="2">
+                    2
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="children" value="3">
+                    3
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="children" value="4+">
+                    4+
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 4 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    Which best describes your role in your household's finances?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="householdRole" value="I am a primary breadwinner" required>
+                    I am a primary breadwinner
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="householdRole" value="I provide a significant portion of the household income">
+                    I provide a significant portion of the household income
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="householdRole" value="My partner and I contribute roughly equally">
+                    My partner and I contribute roughly equally
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="householdRole" value="Other">
+                    Other
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 5 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    What is your approximate monthly household income?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="income" value="Below R40000" required>
+                    Below R40,000
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="income" value="R40000 - R60000">
+                    R40,000 - R60,000
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="income" value="R60000 - R100000">
+                    R60,000 - R100,000
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="income" value="R100000+">
+                    R100,000+
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 6 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    Approximately how much does your household spend each month to maintain its current lifestyle?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="expenses" value="Below R30000" required>
+                    Below R30,000
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="expenses" value="R30000 - R50000">
+                    R30,000 - R50,000
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="expenses" value="R50000 - R75000">
+                    R50,000 - R75,000
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="expenses" value="R75000 - R100000">
+                    R75,000 - R100,000
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="expenses" value="R100000+">
+                    R100,000+
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 7 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    Approximately how much do you currently have in investments, property and other significant assets?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="assets" value="Below R1 million" required>
+                    Below R1 million
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="assets" value="R1 million - R2 million">
+                    R1 million - R2 million
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="assets" value="R2 million - R3 million">
+                    R2 million - R3 million
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="assets" value="R3 million">
+                    R3 million
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 8 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    How would you describe your current life and income protection?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="protection" value="I have some cover but I am not sure if it is enough with no shortfalls" required>
+                    I have some cover but I am not sure if it is enough with no shortfalls
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="protection" value="I have some cover but it hasnt been reviewed in years">
+                    I have some cover but it hasn't been reviewed in years
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="protection" value="I only have employer provided cover and not sure if it is comprehensive enough">
+                    I only have employer-provided cover and am not sure if it's comprehensive enough
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="protection" value="I currently have little to no cover">
+                    I currently have little to no cover
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 9 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    What is the biggest reason you are considering reviewing your cover and protection strategy now?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="reason" value="I want to make sure my children are financially protected" required>
+                    I want to make sure my children are financially protected
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="reason" value="I am the primary breadwinner and want to protect my income">
+                    I am the primary breadwinner and want to protect my income
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="reason" value="My financial situation has changed since I took out my current policies">
+                    My financial situation has changed since I took out my current policies
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="reason" value="I recently had a child">
+                    I recently had a child
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="reason" value="I want all of the above">
+                    I want all of the above
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 10 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    How committed are you to protecting your dependants and family?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="commitment" value="Ready to take action now" required>
+                    Ready to take action now
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="commitment" value="Serous but I need some guidence">
+                    Serous but I need some guidence
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 11 -->
+
+            <div class="form-group">
+
+                <label class="question-label">
+                    Which time would be best to be contacted?
+                    <span class="required">*</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="contactTime" value="Between 08:00 - 10:00" required>
+                    Between 08:00 - 10:00
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="contactTime" value="Between 11:00 - 13:00">
+                    Between 11:00 - 13:00
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="contactTime" value="Between 15:00 - 17:00">
+                    Between 15:00 - 17:00
+                </label>
+
+            </div>
+
+
+            <div class="form-submit">
+
+                <button type="submit" class="btn">
+                    Submit My Protection Assessment
+                </button>
+
+                <p class="form-note">
+                    Your responses will help determine whether a personalised
+                    financial protection discussion is appropriate for your circumstances.
+                </p>
+
+            </div>
+
+        </form>
 
     </div>
 
 </section>
 
 
-
-<!-- ========================================================= -->
-<!-- FOOTER / DISCLOSURE                                       -->
-<!-- ========================================================= -->
 
 <footer>
 
